@@ -1,0 +1,10 @@
+{
+  "model": "sonnet",
+  "planningModel": "opus",
+  "maxRetriesPerSession": 2,
+  "maxTurnsPerSession": 50,
+  "tokenBudgetPerSession": 80000,
+  "permissionMode": "bypassPermissions",
+  "validation": { "typeCheck": true, "lint": false, "test": false },
+  "output": { "logsDir": ".casm/logs", "handoffsDir": ".casm/handoffs", "verbose": false }
+}

@@ -1,0 +1,36 @@
+{
+  "name": "casm",
+  "version": "1.0.0",
+  "description": "Claude Code Autonomous Session Manager — orchestrates isolated Claude Code sessions to prevent context degradation",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "casm": "./dist/index.js"
+  },
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "build": "tsup src/index.ts --format esm --dts --no-splitting",
+    "start": "node dist/index.js",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": ["claude", "ai", "session-manager", "cli"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@anthropic-ai/claude-agent-sdk": "^0.2.63",
+    "chalk": "^5.6.2",
+    "commander": "^12.1.0",
+    "execa": "^9.6.1",
+    "fs-extra": "^11.3.3",
+    "ora": "^8.2.0",
+    "tiktoken": "^1.0.22",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.4",
+    "@types/node": "^22.19.13",
+    "tsup": "^8.5.1",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  }
+}
